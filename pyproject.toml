@@ -1,0 +1,48 @@
+[build-system]
+build-backend = "mesonpy"
+requires = ["meson-python>=0.16.0"]
+
+[project]
+name = "lusol4py"
+version = "0.0.1"
+authors = [
+  { name="Jonas Breuling", email="breuling@inm.uni-stuttgart.de" },
+]
+description = "Python wrapper for the fortran package LUSOL: Sparse LU for Ax = b"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+  "numpy==1.26.4",
+  "scipy==1.15.2",
+  "black>=25.1.0",
+  "pytest>=8.3.5",
+  "pytest-cov>=6.0.0",
+]
+license = {file = "LICENSE.txt"}
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: BSD License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Scientific/Engineering",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: POSIX",
+    "Operating System :: Unix",
+    "Operating System :: MacOS",
+]
+
+[project.urls]
+homepage = "https://github.com/JonasBreuling/lusol4py"
+documentaton = "https://github.com/JonasBreuling/lusol4py"
+source = "https://github.com/JonasBreuling/lusol4py"
+download = "https://github.com/JonasBreuling/lusol4py/releases"
+tracker = "https://github.com/JonasBreuling/lusol4py/issues"
