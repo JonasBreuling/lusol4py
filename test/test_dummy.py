@@ -1,7 +1,6 @@
 import lusol4py
-from lusol4py import foo, lu1fac
+from lusol4py import foo
 
-lusol4py.foo()
-foo()
-
-print(f"lu1fac(): {lu1fac()}")
+if __name__ == "__main__":
+    lusol4py.foo()
+    foo()

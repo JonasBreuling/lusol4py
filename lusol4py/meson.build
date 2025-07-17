@@ -1,5 +1,6 @@
 python_sources = [
   '__init__.py',
+  'lusol.py',
 ]
 
 py.install_sources(
@@ -10,7 +11,8 @@ py.install_sources(
 if enable_fortran
   if blas_dep.found() and lapack_dep.found()
     message('Add fortran wrapper since all dependencies are found')
-    subdir('lusol')
+    subdir('dummy')
+    subdir('internal')
   else
     message('Skipp fortran wrapper since not dependencies are found')
   endif

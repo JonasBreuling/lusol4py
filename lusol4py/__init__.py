@@ -1,2 +1,3 @@
-from .lusol import foo
-from .lusol import lu1fac
+from .dummy import foo
+from .internal import lu1fac
+from .lusol import LUSOL
