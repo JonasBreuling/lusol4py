@@ -1,14 +1,15 @@
 # see https://numpy.org/doc/stable/f2py/buildtools/meson.html
 project(
-    'lusol4py', 
-    'c',
+  'lusol4py', 
+  'c', 'fortran',
+  default_options: ['warning_level=2']
 )
 
 py_mod = import('python')
 py = py_mod.find_installation(pure: false)
 py_dep = py.dependency()
 
-enable_fortran = add_languages('fortran', required: false)
+enable_fortran = true
 
 if enable_fortran
   message('enable_fortran=true')
@@ -26,4 +27,4 @@ if enable_fortran
   endif
 endif
 
-subdir('dae4py')
+subdir('lusol4py')
